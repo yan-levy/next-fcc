@@ -13,3 +13,4 @@ What I learned today:
 - How to enhance modularity and maintainability
 - How to create dynamic api routes
 - Dynamic params
+- API Integration

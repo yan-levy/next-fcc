@@ -21,8 +21,9 @@ async function getQuizQuestion(id) {
   return data.json()
 }
 
-export default async function Page({params}) {
-  const { question } = await getQuizQuestion(params.if) 
+
+export default async function Page({ params }) {
+  const { question } = await getQuizQuestion(params.id)
 
   return (
     <Container as="main" className="flex flex-col gap-5 py-5">

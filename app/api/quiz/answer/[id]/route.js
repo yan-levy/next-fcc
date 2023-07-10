@@ -19,16 +19,15 @@ export async function GET(req, { params }) {
       return new NextResponse('not found', { status: 404 })
     }
 
-    const { correct_answers } = question
+    const { correct_answer } = question
 
     const filteredQuestions = questions.data.filter(
       item => item.id !== params.id,
     )
-
     const random = Math.floor(Math.random() * filteredQuestions.length)
 
     return NextResponse.json({
-      correct: correct_answers,
+      correct: correct_answer,
       random: filteredQuestions[random].id,
     })
   } catch (error) {

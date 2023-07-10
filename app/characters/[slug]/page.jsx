@@ -100,7 +100,7 @@ export default async function Page({ params }) {
                   className="p-2 italic text-gray-400 border-l-4 border-green-400 rounded-md"
                   key={item.idx}
                 >
-                  {item.qoute}
+                  {item.quote}
                 </li>
               )
             })}
